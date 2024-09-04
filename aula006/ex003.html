@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de JavaScript</title>
+    <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body{
+            background-color: rgb(81, 81, 131);
+            color: white;
+            font: 2em arial small-caps;
+            text-align: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        main{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="laco">
+            <h1>Alerta de JavaScript!</h1>
+        </div>
+        <script>
+            var n1 = Number(window.prompt('Digite um número: '))
+            var n2 = Number(window.prompt('Digite outro número: '))
+            var soma = n1 + n2
+            window.alert(`A soma de ${n1} + ${n2} é igual a: ${soma}`)
+        </script>
+    </main>
+</body>
+</html>

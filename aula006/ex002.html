@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de JavaScript</title>
+    <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body{
+            background-color: rgb(81, 81, 131);
+            color: white;
+            font: 2em arial small-caps;
+            text-align: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        main{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="laco">
+            <h1>Alerta de JavaScript!</h1>
+        </div>
+        <script>
+            var nome = window.prompt('Qual seu nome?')
+            window.alert('É um prazer ter você, ' + nome + ' como nosso cliente!')
+        </script>
+    </main>
+</body>
+</html>
