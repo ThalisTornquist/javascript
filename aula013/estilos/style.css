@@ -8,10 +8,11 @@
 }
 
 body{
-    background-color: rgb(88, 131, 145);
+    background-color: #c55412;
     height: 100vh;
     width: 100vw;
-    text-align: center;           
+    text-align: center;  
+    font-size: 1.5em;         
 }
 
 main{
@@ -27,6 +28,7 @@ main{
 
 header{
     text-align: center;
+    
 }
 
 section{
@@ -36,5 +38,30 @@ section{
     border-radius: 20px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.315);
     color: black;
-    margin: 20px 0px 20px 0px;
+    margin: 15px 0px 15px 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#res{
+    margin-top: 10px;
+}
+
+.hr{
+    border-radius: 50%;
+    margin: 30px;
+    height: 350px;
+    width: 350px;
+}
+
+#f1{
+    display: block;
+}
+#f2{
+    display: none;
+}
+#f3{
+    display: none;
 }
