@@ -19,14 +19,22 @@
             </div>
 
             <div id="sexo">
-                <label for="sex">Sexo:</label>
-                <input type="checkbox" name="sex" id="sex">
+                <p>Sexo:
+                    <input type="radio" name="radsex" id="masc">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Femenino</label>
+                </p>
             </div>
 
             <input type="button" value="Verificar" id="bt" onclick="calcular()">
 
             <div id="res">
                 Prencha os dados acima para ver os resultados.
+            </div>
+
+            <div id="img">
+                <img src="" alt="foto criança" id="foto">
             </div>
         </section>
 
