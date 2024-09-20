@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conta</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Contadora</h1>
+        </header>
+
+        <section>
+            <div id="form">
+                <label for="inicio">Início:</label>
+                <input type="number" name="inicio" id="inicio">
+                
+                <label for="fim">Fim:</label>
+                <input type="number" name="fim" id="fim">
+
+                <label for="passo">Passo:</label>
+                <input type="number" name="passo" id="passo">
+
+                <input type="button" value="Contar" onclick="contar()" id="bt">
+            </div>
+
+            <div id="res">
+              Adicione dados para ver o resultado.
+            </div>
+        </section>
+
+        <footer>Criado por Thalis</footer>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
