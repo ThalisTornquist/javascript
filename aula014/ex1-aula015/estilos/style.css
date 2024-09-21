@@ -46,8 +46,40 @@ section{
 
 input{
     display: block;
-    margin-bottom: 15px;
+    margin: 15px auto;
     text-align: center;
     padding: 5px;
+    font-size: 0.8em;
+
 }
 
+#txtn::-webkit-inner-spin-button{
+    display: none;
+}
+
+#seltab{
+    padding: 5px;
+    display: none;
+    text-align: center;
+    font-size: 1em;
+    margin: 20px 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+option{
+    padding: 3px;
+}
+
+#seltab::-webkit-scrollbar{
+    display: none;
+}
+
+label{
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#bt{
+    margin: 10px auto;
+    cursor: pointer;
+}
