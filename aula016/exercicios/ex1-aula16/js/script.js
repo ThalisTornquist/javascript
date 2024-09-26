@@ -1,16 +1,43 @@
-function adicionar(){
-    let num = document.getElementById('txtn')
-    let n = Number(num.value)
-    let sel = document.getElementById('selnum')
+let num = document.getElementById('txtn')
+let valores = []
+let sel = document.getElementById('selnum')
+let res = document.getElementById('res')  
 
-
-    if (n > 0 && n <= 100){
-
-    } else {
-        alert('numero invalido!')
+function numero(n){
+    if(Number(n) >= 1 && Number(n) <= 100){
+        return true
+    } else{
+        return false
+    }
+}
+function lista (n, l){
+    if (l.indexOf(Number(n)) != -1){
+        return true
+    } else{
+        return false
     }
 }
 
-function finalizar(){
 
+
+function adicionar(){  
+    
+//||
+    if (numero(num.value) && !lista(num.value, valores)){
+        
+       
+        let item = document.createElement('option')
+        item.text = `Valor ${n} adicionado`
+        sel.appendChild(item)
+        sel.style.textAlign = 'center'
+        
+       
+    } else {
+        alert('numero invalido!')
+    }
+    
+}
+
+function finalizar(){
+    res.innerHTML = `Ao todo, temos ${n.length} números cadastrados.`
 }
