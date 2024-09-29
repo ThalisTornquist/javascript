@@ -47,10 +47,10 @@ function finalizar(){
         alert('Adicione valores acima para continuar!')
     } else{
         res.innerHTML = ''
-        valores.sort()
+        
         
         let tot = valores.length
-        let maior = Number(valores.length) -1 
+         
         
         v = 0
         if(tot % 2 == 0){
@@ -66,10 +66,15 @@ function finalizar(){
             v += valores[tot]
         }
         
-        res.innerHTML += `Ao todo, temos ${tot} números cadastrados. <br>`
-        res.innerHTML += `O maior valor cadastrado foi ${valores[maior]}<br>`
-        res.innerHTML += `O menor valor cadastrado foi ${valores[0]}<br>`
-        res.innerHTML += `A soma dos valores é igual a ${v}<br>`
+        valores.sort((a, b) => {
+            return a - b; // Para ordem crescente
+        })
+        let maior = Number(valores.length) -1
+
+        res.innerHTML += `Ao todo, temos <strong>${tot}</strong> números cadastrados <br>`
+        res.innerHTML += `O maior valor cadastrado foi <strong>${valores[maior]}</strong><br>`
+        res.innerHTML += `O menor valor cadastrado foi <strong>${valores[0]}</strong><br>`
+        res.innerHTML += `A soma dos valores é igual a <strong>${v}</strong><br>`
     }
     
     
