@@ -66,15 +66,25 @@ function finalizar(){
             v += valores[tot]
         }
         
+        var media = 0 
+
+        if (valores.length == 1){
+            media = v
+        } else{
+            media = v / tot
+        }
+        
+
         valores.sort((a, b) => {
             return a - b; // Para ordem crescente
         })
         let maior = Number(valores.length) -1
 
-        res.innerHTML += `Ao todo, temos <strong>${tot}</strong> números cadastrados <br>`
+        res.innerHTML += `Ao todo, temos <strong>${valores.length}</strong> números cadastrados <br>`
         res.innerHTML += `O maior valor cadastrado foi <strong>${valores[maior]}</strong><br>`
         res.innerHTML += `O menor valor cadastrado foi <strong>${valores[0]}</strong><br>`
         res.innerHTML += `A soma dos valores é igual a <strong>${v}</strong><br>`
+        res.innerHTML += `A média dos valores é igual a <strong>${media}</strong><br>`
     }
     
     
