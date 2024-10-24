@@ -1,0 +1,10 @@
+{
+    "nome":"Thalis",
+    "idade": 18,
+    "profissão":"estudante",
+    "detalhes":{
+        "trabalha": true,
+        "local": "casa",
+        "profissão":"agricultor"
+    }
+}
