@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hide{
+    display: none;
+}
+
+a , input[type="submit"]{
+    background-color: rgb(77, 77, 204);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+a:hover, input[type="submit"]:hover{
+    opacity: 1;
+    background-color: rgb(77, 77, 255);
+}
+
+body{
+    background-color: rgb(206, 206, 206);
+}
