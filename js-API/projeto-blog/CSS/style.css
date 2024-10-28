@@ -7,6 +7,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+p, h2{
+    padding: 10px;
+    margin: 15px;
+    text-align: justify;
+}
+
+h2{
+    margin-top: 30px;
+}
+
 .hide{
     display: none;
 }
@@ -20,6 +30,8 @@ a , input[type="submit"]{
     border: none;
     cursor: pointer;
     opacity: 0.8;
+    margin: 30px;
+    
 }
 
 a:hover, input[type="submit"]:hover{
@@ -29,4 +41,39 @@ a:hover, input[type="submit"]:hover{
 
 body{
     background-color: rgb(206, 206, 206);
+}
+
+#main{
+    background-color: white;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+#titulo{
+    font-variant: small-caps;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 7px;
+
+}
+
+form{
+    width:300px;
+    margin: auto;
+}
+
+form div{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 20px;
+}
+
+form label{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form input{
+    padding: 5px;
 }
